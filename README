@@ -1,0 +1,48 @@
+Formulario Dinámico en JavaScript
+
+Descripción
+
+Este proyecto es un formulario de registro interactivo desarrollado con HTML, CSS y JavaScript. Incluye validaciones en tiempo real para garantizar que los datos ingresados cumplan con los requisitos antes de habilitar el envío. Al enviar correctamente, muestra un mensaje en la página: ¡Sus datos fueron registrados correctamente! Los campos válidos se resaltan en verde y los inválidos en rojo.
+
+Características principales
+
+Campos obligatorios: El formulario requiere que el usuario complete los campos Nombre, Correo electrónico, Contraseña, Confirmar contraseña y Edad antes de poder enviar los datos.
+
+Validaciones en tiempo real:
+- Nombre: Se valida que tenga al menos 3 caracteres. Mientras el usuario escribe, se indica si cumple o no esta condición.
+- Correo electrónico: Verifica que el formato del correo sea correcto (contenga @ y un dominio). El usuario recibe un aviso inmediato si es incorrecto.
+- Contraseña: Debe tener mínimo 8 caracteres, al menos un número y un símbolo. Se permite cualquier símbolo sin restricción, y se muestra un mensaje de error si no cumple los requisitos.
+- Confirmación de contraseña: Comprueba que el valor ingresado coincida exactamente con la contraseña para evitar errores de tipeo.
+- Edad: Solo se permiten valores mayores o iguales a 18 años, asegurando que el usuario cumpla con la edad mínima requerida.
+
+Botón de envío: Está inicialmente deshabilitado y solo se activa cuando todos los campos del formulario son válidos. Esto evita que se envíen datos incompletos o incorrectos.
+
+Botón de reinicio: Permite limpiar todos los campos del formulario y restablecer los estilos de validación, incluyendo la deshabilitación del botón de envío.
+
+Mensajes de error: Cada campo muestra un mensaje específico cuando los datos ingresados no cumplen con la validación. Los mensajes desaparecen automáticamente cuando el campo se corrige.
+
+Mensaje de éxito: Al enviar correctamente el formulario, se muestra un mensaje en la página indicando que los datos fueron registrados correctamente. No se utiliza alert, por lo que no aparece la línea “127.0.0.1 dice”.
+
+Estilo visual atractivo:
+- Contenedor: El formulario tiene un fondo turquesa claro y un borde turquesa más fuerte, destacando visualmente el área de registro.
+- Botones: Los botones de envío y reinicio son de color rosa, llamativos y fáciles de identificar.
+- Campos válidos e inválidos: Los campos se resaltan con borde verde si son correctos y con borde rojo si contienen errores, brindando retroalimentación visual inmediata.
+
+Archivos del proyecto
+
+index.html: Contiene la estructura del formulario y el contenedor para mostrar el mensaje de éxito. Incluye etiquetas para mostrar errores junto a cada campo.
+
+styles.css: Define los estilos del formulario, colores, bordes, botones y la apariencia de los mensajes de error y de éxito.
+
+script.js: Implementa todas las validaciones dinámicas en tiempo real, controla la activación del botón de envío, verifica la coincidencia de contraseñas, la edad mínima y muestra el mensaje de éxito en la página.
+
+Tecnologías utilizadas
+
+HTML5
+CSS3
+JavaScript
+
+Repositorio y GitHub Pages
+
+- Repositorio: [Agregar enlace del repositorio aquí]
+- GitHub Pages: [Agregar enlace del GitHub Pages aquí]
