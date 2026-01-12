@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #b2f0f0;
+    border: 3px solid #00b3b3;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007070;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #005757;
+}
+
+input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 2px solid #00b3b3;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #007070;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.valid {
+    border-color: #2ecc71;
+}
+
+.invalid {
+    border-color: #e74c3c;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#submitBtn {
+    background-color: #ff85c1;
+}
+
+#submitBtn:disabled {
+    background-color: #ffb3d1;
+    cursor: not-allowed;
+}
+
+#resetBtn {
+    background-color: #ff85c1;
+}
+
+/* Estilo del mensaje final */
+.mensajeRegistro {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #d4f4f4;
+    border: 2px solid #00b3b3;
+    color: #005757;
+    font-weight: bold;
+    text-align: center;
+    display: none; /* oculto hasta enviar */
+}
